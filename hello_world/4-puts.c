@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /*
- * main - puts
- * return 0 if correct
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
