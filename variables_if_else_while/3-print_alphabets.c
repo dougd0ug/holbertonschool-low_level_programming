@@ -15,7 +15,7 @@ int main(void)
 		putchar(alph);
 		alph++;
 	}
-	char alph = 'A';
+	alph = 'A';
 
 	while (alph <= 'Z')
 	{
