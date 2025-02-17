@@ -8,9 +8,12 @@
 
 int main(void)
 {
-	for (char alph = 'a'; alph <= 'z' && alph !'e' && alph !'q'; alph++)
+	for (int alph = 97; alph <= 122; alph++)
 	{
-		putchar(alph);
+		if (alph != 101 && alph != 113)
+		{
+			putchar(alph);
+		}
 	}
-
+	putchar(\n);
 }
