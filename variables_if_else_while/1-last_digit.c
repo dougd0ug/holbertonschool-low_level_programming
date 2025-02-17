@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - Return the last digit of a number and says if its greater than 5
  * equal to 0 of less than 6
  *
