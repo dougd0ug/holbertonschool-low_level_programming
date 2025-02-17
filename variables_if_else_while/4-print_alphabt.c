@@ -8,6 +8,8 @@
 
 int main(void)
 {
+	int alph;
+
 	for (alph = 97; alph <= 122; alph++)
 	{
 		if (alph != 101 && alph != 113)
