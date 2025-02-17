@@ -1,6 +1,4 @@
 #include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
 
 /**
  * main - prints alphabet
@@ -10,8 +8,12 @@
 
 int main(void)
 {
-	long char ch = 'abcdefghijklmnopqrstuvwxyz\n';
-	putchar(ch);
+	char alph = 'a';
+	while (alph <= 'z')
+	{
+		putchar(alph);
+		alph++;
+	}
+	putchar('\n');
 	return (0);
-
 }
