@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	for (int alph = 97; alph <= 122; alph++)
+	for (alph = 97; alph <= 122; alph++)
 	{
 		if (alph != 101 && alph != 113)
 		{
@@ -16,4 +16,5 @@ int main(void)
 		}
 	}
 	putchar(\n);
+	return (0);
 }
