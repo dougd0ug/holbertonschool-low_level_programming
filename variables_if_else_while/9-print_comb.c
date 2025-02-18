@@ -12,15 +12,11 @@ int main(void)
 
 	for (alph = 0; alph < 10; alph++)
 	{
+		putchar(alph + '0');
 		if (alph < 9)
 		{
-			putchar(alph);
 			putchar(',');
 			putchar(' ');
-		}
-		else
-		{
-			putchar(alph);
 		}
 	}
 	return (0);
