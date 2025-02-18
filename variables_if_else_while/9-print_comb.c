@@ -10,9 +10,9 @@ int main(void)
 {
 	int alph;
 
-	for (alph = 48; alph < 58; alph++)
+	for (alph = 0; alph < 10; alph++)
 	{
-		if (alph < 57)
+		if (alph < 9)
 		{
 			putchar(alph);
 			putchar(',');
