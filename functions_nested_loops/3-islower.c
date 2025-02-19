@@ -2,8 +2,7 @@
 
 /**
  * _islower - Entry
- * c - the character we want to check
- * c: the character we want to check
+ * @c: the character we want to check
  * _putchar - writes the character c to stdout
  *
  * Return: On success 1.
