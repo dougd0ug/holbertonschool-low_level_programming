@@ -10,7 +10,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int add(int a, int b);
+int add(int a, int b)
 {
 	int result;
 
