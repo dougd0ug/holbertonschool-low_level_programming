@@ -8,7 +8,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-void times_table(void);
+void times_table(void)
 {
 	int n, mult, prod;
 
