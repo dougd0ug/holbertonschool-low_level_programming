@@ -20,8 +20,10 @@ int main(void)
 		}
 		while (digit1 != 8 && digit2 != 9)
 		{
-			putchar('\n');
+			putchar(',');
+			putchar(' ');
 		}
+		putchar('\n');
 	}
 	return (0);
 }
