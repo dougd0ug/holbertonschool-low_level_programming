@@ -28,12 +28,12 @@ int main(void)
 		{
 			printf("Fizz");
 			putchar(' ');
-		} else
+		} else if (i < 100)
 		{
 			printf("%d", i);
 			putchar(' ');
+			putchar('\n');
 		}
 	}
-	putchar('\n');
 	return (0);
 }
