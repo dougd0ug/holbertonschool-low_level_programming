@@ -9,7 +9,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	if (c < 48 && c > 57)
 	{
