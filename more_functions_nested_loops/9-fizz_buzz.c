@@ -32,11 +32,11 @@ int main(void)
 		{
 			printf("%d", i);
 			putchar(' ');
-		} else 
+		} else
 		{
 			printf("%d", i);
 		}
-		putchar('\n');
 	}
+	putchar('\n');
 	return (0);
 }
