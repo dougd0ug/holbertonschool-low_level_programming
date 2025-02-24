@@ -23,7 +23,7 @@ void print_triangle(int size)
 	{
 		for (lines = 0; lines < size; lines++)
 		{
-			for (height = size; height > lines; height--)
+			for (height = (size - 1); height > lines; height--)
 			{
 				_putchar(' ');
 			}
@@ -35,5 +35,4 @@ void print_triangle(int size)
 			_putchar('\n');
 		}
 	}
-	return (0);
 }
