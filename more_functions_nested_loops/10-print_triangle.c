@@ -15,15 +15,15 @@ void print_triangle(int size)
 	int lines;
 	int nb;
 
-	if (n <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (lines = 0; lines < n; lines++)
+		for (lines = 0; lines < size; lines++)
 		{
-			for (height = n; height > lines; height--)
+			for (height = size; height > lines; height--)
 			{
 				_putchar(' ');
 			}
