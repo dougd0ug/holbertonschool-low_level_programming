@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - Entry
+ * swap_int - Entry
  * @a: parameter we want to update
  * @b: same
  * _putchar - writes the character c to stdout
