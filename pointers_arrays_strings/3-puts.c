@@ -17,6 +17,6 @@ void _puts(char *str)
 
 	char a[i] = str;
 
-	_putchar(a[i]);
+	_putchar(&a[i]);
 
 }
