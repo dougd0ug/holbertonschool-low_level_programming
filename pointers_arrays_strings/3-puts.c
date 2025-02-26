@@ -11,13 +11,13 @@
 
 void _puts(char *str)
 {
-	_strlen(str)
+	_strlen(str);
 	{
 		return (i);
 	}
-	
+
 	char a[i] = str
-	
+
 	_putchar(a[i]);
-	
+
 }
