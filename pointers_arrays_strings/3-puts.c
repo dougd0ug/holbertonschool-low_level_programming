@@ -13,10 +13,10 @@ void _puts(char *str)
 {
 	int i;
 
-	int _strlen(*str) = i;
+	int _strlen(str) = i;
 
-	char a[i] = str;
+	char array[i] = str;
 
-	_putchar(&a[i]);
+	_putchar(&array[i]);
 
 }
