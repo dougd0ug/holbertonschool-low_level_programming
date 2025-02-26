@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_array - print array
@@ -16,13 +17,13 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%p", a[i]);
+		printf("%d", a[i]);
 		_putchar(',');
 		_putchar(' ');
 
 		if (i == n)
 		{
-			printf("%p", a[i]);
+			printf("%d", a[i]);
 		}
 	}
 	_putchar('\n');
