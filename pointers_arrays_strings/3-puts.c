@@ -11,8 +11,13 @@
 
 void _puts(char *str)
 {
-	int i[str];
-
-	_putchar(i[str]);
-
+	_strlen(str)
+	{
+		return (i);
+	}
+	
+	char a[i] = str
+	
+	_putchar(a[i]);
+	
 }
