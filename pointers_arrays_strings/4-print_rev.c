@@ -20,7 +20,7 @@ void print_rev(char *s)
 
 	for (rev = length; s[length]; rev--)
 	{
-		_putchar(s[length]);
+		_putchar(s[(length + 1)]);
 	}
 	_putchar('\n');
 }
