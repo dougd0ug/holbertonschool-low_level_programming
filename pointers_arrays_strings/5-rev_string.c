@@ -13,6 +13,7 @@ void rev_string(char *s)
 {
 	int length;
 	int rev;
+	int string;
 
 	for (length = 0; s[length]; length++)
 	{
@@ -22,7 +23,7 @@ void rev_string(char *s)
 
 	for (rev = length; rev >= 0; rev--)
 	{
-		return (s[rev]);
+		string = s[rev];
 	}
 	_putchar('\n');
 }
