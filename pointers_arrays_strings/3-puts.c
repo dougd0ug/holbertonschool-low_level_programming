@@ -11,8 +11,10 @@
 
 void _puts(char *str)
 {
-	char length[] = str;
+	int length;
 
-	_putchar(length[]);
-
+	for (length = 0; str[length]; length++)
+	{
+		_putchar(str[length]);
+	}
 }
