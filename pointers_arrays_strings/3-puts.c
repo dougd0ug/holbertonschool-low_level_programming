@@ -11,12 +11,10 @@
 
 void _puts(char *str)
 {
-	int i;
+	int i = _strlen(str);
 
-	int _strlen(str) = i;
+	char length[i] = str;
 
-	char array[i] = str;
-
-	_putchar(&array[i]);
+	_putchar(&length[i]);
 
 }
