@@ -19,7 +19,7 @@ int _atoi(char *s)
 		{
 			if (s[(scan - 1)] == 45)
 			{
-				return (45);
+				return ((45 + s[scan]));
 			}
 			else
 			{
