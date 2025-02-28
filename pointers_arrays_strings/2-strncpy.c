@@ -20,7 +20,7 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[copy] = src[copy];
 	}
 
-	if (dest[copy] > n)
+	if (dest[copy] < n)
 	{
 		dest[copy] = '\0';
 	}
