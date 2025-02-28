@@ -20,10 +20,9 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[copy] = src[copy];
 	}
 
-	if (dest[copy] < n)
+	for (dest[copy] < n; copy++)
 	{
 		dest[copy] = '\0';
-		copy++;
 	}
 	return (dest);
 }
