@@ -1,28 +1,30 @@
 #include "main.h"
 
 /**
- * *_strncpy - Write a function that copies a string
- * @dest: parameter we want to puts
- * @src: parameter we want to switch
- * @n: number of repetitions
+ * _strcmp - Write a function that compares two strings
+ * @s1: parameter we want to puts
+ * @s2: parameter we want to switch
  * _putchar - writes the character c to stdout
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char int _strcmp(char *s1, char *s2)
 {
-	int copy;
+	int i;
+	int j;
+	int comp;
 
-	for (copy = 0; src[copy] != '\0' && copy < n; copy++)
+	for (i = 0; s1[i]; i++)
 	{
-		dest[copy] = src[copy];
+		for (j = 0; s2[j]; j++)
+		{
+			if (i == j)
+			{
+				comp++;
+			}
+		}
 	}
-
-	for (;copy < n; copy++)
-	{
-		dest[copy] = '\0';
-	}
-	return (dest);
+	return (comp);
 }
