@@ -23,6 +23,7 @@ char *_strncpy(char *dest, char *src, int n)
 	if (dest[copy] < n)
 	{
 		dest[copy] = '\0';
+		copy++;
 	}
 	return (dest);
 }
