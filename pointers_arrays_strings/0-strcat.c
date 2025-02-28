@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat - print half of a string
+ * *_strcat - Write a function that concatenates two strings
  * @dest: parameter we want to puts
  * @src: parameter we want to switch
  * _putchar - writes the character c to stdout
@@ -12,9 +12,16 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *i;
+	int i, j;
 
-	i = (dest[]+src[]);
-	dest = i;
-	return (dest);
+	for (i = 0; dest[i]; i++)
+	{		
+	}
+	
+	for (j = 0; src[j]; j++)
+	{
+		dest[i + j] = src[j];
+	}
+	dest[i + j] = '\0';
+	return(dest);
 }
