@@ -12,7 +12,7 @@
 
 char *string_toupper(char *l)
 {
-	char *u = l
+	char *u = l;
 	int i = 0;
 
 	while (u[i] != '\0')
