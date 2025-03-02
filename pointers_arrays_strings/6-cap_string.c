@@ -22,7 +22,7 @@ char *cap_string(char *l)
 		{
 			while (j < 14)
 			{
-				if (l[i - 1] == symb[i])
+				if (l[i - 1] == symb[j])
 				{
 					l[i] = l[i] - 'a' + 'A';
 				}
