@@ -21,6 +21,9 @@ int _strcmp(char *s1, char *s2)
 		if (s1[i] != s2[i])
 		{
 			comp = (s1[i] - s2[i]);
+		} else
+		{
+			comp = 0;
 		}
 	}
 	return (comp);
