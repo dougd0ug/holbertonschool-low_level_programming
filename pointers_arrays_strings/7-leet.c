@@ -10,7 +10,7 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-char *leet(char *l);
+char *leet(char *l)
 {
 	char lettre[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	char number[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
