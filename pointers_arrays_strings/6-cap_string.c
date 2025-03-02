@@ -26,7 +26,6 @@ char *cap_string(char *l)
 				{
 					l[i] = l[i] - 'a' + 'A';
 				}
-				j++;
 			}
 		}
 	}
