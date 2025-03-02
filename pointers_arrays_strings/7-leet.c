@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - to capitalize after a symbol
+ * leet - change letters to digits
  * @l: parameter we want to puts
  * parameter we want to switch
  * _putchar - writes the character c to stdout
