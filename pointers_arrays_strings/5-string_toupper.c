@@ -2,7 +2,7 @@
 
 /**
  * string_toupper - changer lowercase to uppercase
- * @u: parameter we want to puts
+ * @l: parameter we want to puts
  * parameter we want to switch
  * _putchar - writes the character c to stdout
  *
