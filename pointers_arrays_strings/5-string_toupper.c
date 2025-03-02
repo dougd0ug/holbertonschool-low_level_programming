@@ -10,8 +10,9 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-char *string_toupper(char *u)
+char *string_toupper(char *l)
 {
+	char *u = l
 	int i = 0;
 
 	while (u[i] != '\0')
