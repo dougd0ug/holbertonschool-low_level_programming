@@ -22,9 +22,7 @@ char *leet(char *l)
 		for (j = 0; j < 10; j++)
 		{
 			if (l[i] == lettre[j])
-			{
 				l[i] = number[j];
-			}
 		}
 	}
 	return (l);
