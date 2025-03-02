@@ -13,16 +13,15 @@
 int _strcmp(char *s1, char *s2)
 {
 	int i;
-	int j;
 	int comp = 0;
 
 	for (i = 0; s1[i] != '\0'; i++)
 	{
-		for (j = 0; s2[j] != '\0'; j++)
+		for (; s2[i] != '\0'; i++)
 		{
-			if (s1[i] > s2[j] || s1[i] < s2[j])
+			if (s1[i] > s2[i] || s1[i] < s2[i])
 			{
-				comp = (s1[i] - s2[j]);
+				comp = (s1[i] - s2[i]);
 			} else
 			{
 				comp = 0;
