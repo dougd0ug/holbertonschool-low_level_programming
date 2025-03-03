@@ -11,8 +11,8 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i = 0;
-	unsigned int j = 0;
+	unsigned int i;
+	unsigned int j;
 	unsigned int length = _strlen(accept);
 	int result = 1;
 
@@ -33,7 +33,7 @@ unsigned int _strspn(char *s, char *accept)
 		if (result == 0)
 		{
 			break;
-		}		
+		}
 	}
 	return (i);
 }
