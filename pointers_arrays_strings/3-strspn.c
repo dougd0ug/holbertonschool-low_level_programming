@@ -13,12 +13,12 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i;
 	unsigned int j;
-	unsigned int length = _strlen(accept);
+	int result;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		int result = 0;
-		for (j = 0; j <= length; i++)
+		result = 0;
+		for (j = 0; accept[j] != '\0'; i++)
 		{
 			if (s[i] == accept[j])
 			{
