@@ -11,28 +11,29 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
-	int j = 0;
-	int result = 0;
-	int check = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
+	unsigned int length = _strlen(accept);
+	int result = 1;
 
-	while (s[i])
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		while (accept[j])
+		for (j = 0; j <= length; i++)
 		{
-			if (s[i] == accept[j])
+			if (j == length)
 			{
-				result++;
-				check = 1;
+				result = 0;
 				break;
 			}
-			j++;
+			else if (s[i] == accept[j])
+			{
+				break;
+			}
 		}
-		if (check == 0)
+		if (result == 0)
 		{
-			return (result);
-		}
-		i++;
+			break;
+		}		
 	}
-	return (result);
+	return (i);
 }
