@@ -17,10 +17,10 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			result = s[i];
+			result = s;
 		} else
 		{
-			result = NULL;
+			result = \0;
 		}
 	}
 	return (result);
