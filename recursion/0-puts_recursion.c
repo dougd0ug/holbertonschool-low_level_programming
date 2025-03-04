@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _puts_recursion - Write a function that prints a string, followed by a new line
+ * _puts_recursion - Write a function that prints a string
  * @s: string we want to puts
  *
  * Return: Always 0
@@ -11,11 +11,12 @@
 void _puts_recursion(char *s)
 {
 	int i = 0;
+
+	_putchar(s[i]);
+
 	if (i < 0)
 	{
-		return;
+		print(s[i]);
 	}
-	
-	_putchar(s[i]);
 	i++;
 }
