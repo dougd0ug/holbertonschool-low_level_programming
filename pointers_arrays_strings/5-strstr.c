@@ -27,11 +27,11 @@ char *_strstr(char *haystack, char *needle)
 			{
 				break;
 			}
-			while (haystack[i] == needle[j])
-			{
-				return (haystack + i);
-			}
 		}
+		if (needle[j] == '\0')
+			{
+			return (haystack + i);
+			}
 	}
 	return ('\0');
 }
