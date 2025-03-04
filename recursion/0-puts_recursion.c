@@ -16,7 +16,7 @@ void _puts_recursion(char *s)
 
 	if (i < 0)
 	{
-		print(s[i]);
+		_puts_recursion(s[i]);
 	}
 	i++;
 }
