@@ -13,26 +13,21 @@ char *_strpbrk(char *s, char *accept)
 {
 	int i;
 	int j;
-	int result;
+
+	if (s == NULL || accept == NULL)
+	{
+		return (NULL);
+	}
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		result = 0;
-
 		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
 			{
-				result = 1;
-				break;
-				return (s);
+				return (s + i);
 			}
 		}
-
-		if (result == 0)
-		{
-			break;
-		}
 	}
-	return (0);
+	return ('\0');
 }
