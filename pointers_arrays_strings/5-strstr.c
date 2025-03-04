@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * *_strpbrk - Write a function that locates a substring
+ * *_strstr - Write a function that locates a substring
  * @haystack: string to be scanned
  * @needle: string containing the characters to match
  *
@@ -23,6 +23,10 @@ char *_strstr(char *haystack, char *needle)
 	{
 		for (j = 0; needle[j] != '\0'; j++)
 		{
+			if (haystack[i] != needle[j])
+			{
+				break;
+			}
 			while (haystack[i] == needle[j])
 			{
 				return (haystack + i);
