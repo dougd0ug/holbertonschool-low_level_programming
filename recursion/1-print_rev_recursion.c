@@ -10,12 +10,14 @@
 
 void _print_rev_recursion(char *s)
 {
-	if (*s == '\0')  // Condition d'arrêt : si on atteint le caractère nul
-    {
-        _putchar('\n');  // Affiche un saut de ligne quand la chaîne est terminée
-        return ;  // Fin de la récursion
-    }
+	int i = 0;
 
-	_print_rev_recursion(s + 1);  
-	_putchar(*s);
+	if (i < s[i] && s[i] != '\0')
+	{
+		_print_rev_recursion(&s[i + 1]);
+	} else
+	{
+		_putchar(s[i]);
+		_putchar('\n');
+	}
 }
