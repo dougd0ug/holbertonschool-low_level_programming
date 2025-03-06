@@ -2,12 +2,10 @@
 #include <stdio.h>
 
 /**
- * search - Recursion to find x
- * _sqrt_recursion - Write a function that returns
- * the natural square root of a number
- * @n: digit we want the natural root
- * @x: find natural root
- * Return: Always 0
+ *search - find squared root
+ *@n: number to find squared root
+ *@x: squared root
+ *Return: squared root
  */
 
 int search(int n, int x)
@@ -21,6 +19,12 @@ int search(int n, int x)
 	}
 	return (search(n, x + 1));
 }
+
+/**
+ *_sqrt_recursion - return squared root
+ *@n: number to find squared root
+ *Return: squared root
+ */
 
 int _sqrt_recursion(int n)
 {
