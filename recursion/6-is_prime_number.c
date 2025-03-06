@@ -12,7 +12,7 @@
 
 int search(int n, int x)
 {
-	int x = 2;
+	x = 2;
 
 	if ((n % x) == 0)
 	{
@@ -22,7 +22,7 @@ int search(int n, int x)
 	return (search(n, x + 1));
 }
 
-int int is_prime_number(int n)
+int is_prime_number(int n)
 {
 	return (search(n, 1));
 }
