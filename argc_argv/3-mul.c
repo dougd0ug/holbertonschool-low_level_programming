@@ -11,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int result;
+	int nba, nbb;
 	
 	if (argc != 3)
 	{
@@ -18,8 +19,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	
-	int nba = atoi(argv[1]);
-	int nbb = atoi(argv[2]);
+	nba = atoi(argv[1]);
+	nbb = atoi(argv[2]);
 
 	result = (nba * nbb);
 	printf("%d\n", result);
