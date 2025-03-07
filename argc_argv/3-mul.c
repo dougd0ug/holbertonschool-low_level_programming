@@ -8,7 +8,7 @@
  *Return: squared root
  */
 
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
 	int result;
 
@@ -18,7 +18,7 @@ int main(int argc, char *argv[] __attribute__((unused)))
 		return (1);
 	}
 
-	result = ((argc - 2) * (argc - 1));
+	result = ((argv[2]) * (argv[3]));
 	printf("%d\n", result);
 	return (0);
 }
