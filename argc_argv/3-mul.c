@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -18,7 +18,10 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	result = ((argv[2]) * (argv[3]));
+	int nb1 = atoi(argv[1]);
+	int nb2 = atoi(argv[2]);
+
+	result = (nb1 * nb2);
 	printf("%d\n", result);
 	return (0);
 }
