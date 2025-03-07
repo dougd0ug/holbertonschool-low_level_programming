@@ -19,5 +19,6 @@ int main(int argc, char *argv[] __attribute__((unused)))
 	}
 
 	result = ((argc - 2) * (argc - 1));
-	return (result);
+	printf("%d\n", result);
+	return (0);
 }
