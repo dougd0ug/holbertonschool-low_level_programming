@@ -12,7 +12,6 @@
 
 int **alloc_grid(int width, int height)
 {
-	int i, j;
 	int *copy;
 
 	if (width <= 0 || height <= 0)
@@ -28,5 +27,5 @@ int **alloc_grid(int width, int height)
 	}
 	height = 0;
 	width = 0;
-	return (copy);
+	return (*copy);
 }
