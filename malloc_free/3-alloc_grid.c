@@ -13,19 +13,40 @@
 int **alloc_grid(int width, int height)
 {
 	int **copy;
+	int i, j;
 
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
 
-	copy = malloc(sizeof(int **) * (height + width));
+	copy = malloc(sizeof(int *) * height);
 
 	if (copy == NULL)
 	{
 		return (NULL);
 	}
-	height = 0;
-	width = 0;
+
+	for (i = 0; i < height; i++)
+	{
+		code[i] = malloc(sizeof(int) * width);
+		if (copy[i] == NULL)
+		{
+			for (j = 0; i < j; j++)
+			{
+				free(copy[j]);
+			}
+			free(copy);
+			return (NULL);
+		}
+	}
+
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			copy[i][j] = 0;
+		}
+	}
 	return (copy);
 }
