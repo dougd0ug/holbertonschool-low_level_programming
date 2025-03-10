@@ -45,5 +45,6 @@ char *str_concat(char *s1, char *s2)
 		copy[i] = s2[j];
 		i++;
 	}
+	copy[i] = '\0';
 	return (copy);
 }
