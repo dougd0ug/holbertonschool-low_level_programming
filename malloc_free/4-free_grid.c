@@ -26,12 +26,6 @@ void free_grid(int **grid, int height)
 			free(grid[i]);
 		}
 	}
-	for (i = 0; grid[i]; i++)
-	{
-		if (grid[i] != NULL)
-		{
-			free(grid);
-		}
-	}
+	free(grid);
 	return;
 }
