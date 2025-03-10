@@ -12,10 +12,9 @@
 
 void free_grid(int **grid, int height)
 {
-	int **copy;
-	int i, j;
+	int i;
 
-	if (grid <= 0 || height <= 0)
+	if (grid == NULL || height <= 0)
 	{
 		return;
 	}
