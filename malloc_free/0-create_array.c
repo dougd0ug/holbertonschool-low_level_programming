@@ -22,15 +22,16 @@ char *create_array(unsigned int size, char c)
 
 	tab = malloc(size * sizeof(char));
 
+	if (tab == NULL)
+	{
+		return (NULL);
+	}
+
 	for (i = 0; i < size; i++)
 	{
 		tab[i] = c;
 	}
 
-	if (tab == NULL)
-	{
-		return (NULL);
-	}
 
 	return (tab);
 }
