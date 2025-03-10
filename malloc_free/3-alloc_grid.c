@@ -29,7 +29,7 @@ int **alloc_grid(int width, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		code[i] = malloc(sizeof(int) * width);
+		copy[i] = malloc(sizeof(int) * width);
 		if (copy[i] == NULL)
 		{
 			for (j = 0; i < j; j++)
