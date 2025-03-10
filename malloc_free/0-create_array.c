@@ -17,12 +17,13 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
-	int *tab = malloc(size * sizeof(char));
+	char *tab;
+	tab = malloc(size * sizeof(char));
 	int i;
 
 	for (i = 0; i < size; i++)
 	{
 		tab[i] = c;
 	}
-	return (*tab);
+	return (tab);
 }
