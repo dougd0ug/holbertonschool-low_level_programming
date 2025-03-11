@@ -34,8 +34,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-	i = 0;
-	j = 0;
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		copy[i] = s1[i];
@@ -43,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (j = 0; s2[j] <= s2[n]; j++)
 	{
-		copy[i] = s2[n];
+		copy[i] = s2[j];
 		i++;
 	}
 	copy[i] = '\0';
