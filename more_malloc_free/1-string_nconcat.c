@@ -29,7 +29,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (j = 0; s2[j] != '\0'; j++)
 	{
 	}
-	copy = malloc(sizeof(char) * (i + 1 + n));
+	if (n >= j)
+	{
+		n = j;
+	}	
+	copy = malloc(sizeof(char) * (i + 1 + j));
 	if (copy == NULL)
 	{
 		return (NULL);
