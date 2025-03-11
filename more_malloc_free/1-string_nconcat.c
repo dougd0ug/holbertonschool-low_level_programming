@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (j = 0; s2[j] != '\0'; j++)
 	{
 	}
-	if (n >= j)
+	if (n > j)
 	{
 		n = j;
 	}
@@ -43,7 +43,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		copy[i] = s1[i];
 	}
 
-	for (j = 0; s2[j] <= s2[n]; j++)
+	for (j = 0; s2[j] < s2[n]; j++)
 	{
 		copy[i] = s2[j];
 		i++;
