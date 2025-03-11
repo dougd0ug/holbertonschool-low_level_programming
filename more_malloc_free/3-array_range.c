@@ -33,7 +33,7 @@ int *array_range(int min, int max)
 
 	for (j = 0; j < ((max - min) + 1); j++)
 	{
-		free(array[j]);
+		free(array);
 	}
 	return (array);
 }
