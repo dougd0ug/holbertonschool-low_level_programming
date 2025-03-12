@@ -13,33 +13,26 @@ void print_dog(struct dog *d)
 
 	if (d != NULL)
 	{
-		return;
-	}
-
-	for (i = 0; name[i]; i++)
-	{
-		if (name == NULL)
+		if (d->name != NULL)
 		{
-			printf("Name: (nil)");
-			continue;
-		}
-		printf("Name: %s\n", name[i])
-	}
-	if (age == NULL)
-	{
-		printf("Age: (nil)");
-	}
-	else
-	{
-		printf("Age: %d", age);
-	}
-	for (i = 0; owner[i]; i++)
-	{
-		if (owner == NULL)
+			printf("Name: %s\n", d->name);
+		} else
 		{
-			printf("Owner: (nil)");
-			continue;
+			printf("Name: (nil)\n");
 		}
-		printf("Owner: %s", owner[i];)
+		if (d->age != NULL)
+		{
+			printf("Age: %d", d->age);
+		} else
+		{
+			printf("Age: (nil)\n");
+		}
+		if (d->owner != NULL)
+		{
+			printf("Owner: %s\n", d->owner)
+		} else
+		{
+			printf("Owner: (nil)\n");
+		}
 	}
 }
