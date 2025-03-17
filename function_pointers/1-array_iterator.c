@@ -18,10 +18,10 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	if (array == NULL || size == 0)
 	{
 		return;
-	}	
+	}
 
-	for (i = 0; array[i]; i++)
+	for (i = 0; array[i] < array[size]; i++)
 	{
 		action(array[i]);
-	}	
+	}
 }
