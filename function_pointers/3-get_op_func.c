@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "3-calc.h"
+#include <string.h>
 
 /**
  * *get_op_func - have the good operator
@@ -19,12 +20,12 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	if (s != ops->op)
+	if (strcmp(s, ops->op) != 0)
 	{
 		return (NULL);
 	}
 
-	while (i < 5 && s != ops[i].op)
+	while (i < 5 && strcmp(s, ops[i].op) != 0)
 	{
 		i++;
 	}
