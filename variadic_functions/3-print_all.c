@@ -7,7 +7,7 @@
  * @aff_list: liste
  */
 
-void aff_c(char va_list aff_list)
+void aff_c(va_list aff_list)
 {
 	printf("%c", va_arg(aff_list, int));
 }
@@ -17,7 +17,7 @@ void aff_c(char va_list aff_list)
  * @aff_list: liste
  */
 
-void aff_i(int va_list aff_list)
+void aff_i(va_list aff_list)
 {
 	printf("%d", va_arg(aff_list, int));
 }
@@ -27,7 +27,7 @@ void aff_i(int va_list aff_list)
  * @aff_list: liste
  */
 
-void aff_f(double va_list aff_list)
+void aff_f(va_list aff_list)
 {
 	printf("%f", va_arg(aff_list, double));
 }
@@ -37,7 +37,7 @@ void aff_f(double va_list aff_list)
  * @aff_list: liste
  */
 
-void aff_s(char va_list aff_list)
+void aff_s(va_list aff_list)
 {
 	if (s == NULL)
 	{
@@ -61,10 +61,10 @@ void print_all(const char * const format, ...)
 	char *separator = "";
 
 	size_t ops[] = {
-		{"c", aff_c},
-		{"i", aff_i},
-		{"f", aff_f},
-		{"s", aff_s},
+		{'c', aff_c},
+		{'i', aff_i},
+		{'f', aff_f},
+		{'s', aff_s},
 		{NULL, NULL}
 	};
 
