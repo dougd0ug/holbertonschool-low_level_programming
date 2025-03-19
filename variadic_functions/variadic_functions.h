@@ -3,7 +3,7 @@
 
 typedef struct op
 {
-	char *form;
+	char form;
 	void (*f)(va_list);
 } op_t;
 
