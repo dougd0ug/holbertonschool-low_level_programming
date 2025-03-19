@@ -39,13 +39,15 @@ void aff_f(va_list aff_list)
 
 void aff_s(va_list aff_list)
 {
+	char *s = va_arg(aff_list, char *);
+
 	if (s == NULL)
 	{
-		printf("(nil)\n");
-		continue;
+		printf("(nil)");
+		return;
 	}
 
-	printf("%s", va_arg(aff_list, char *));
+	printf("%s", s);
 }
 
 /**
@@ -60,23 +62,25 @@ void print_all(const char * const format, ...)
 	int j = 0;
 	char *separator = "";
 
-	size_t ops[] = {
+	op_t ops[] = {
 		{'c', aff_c},
 		{'i', aff_i},
 		{'f', aff_f},
 		{'s', aff_s},
-		{NULL, NULL}
+		{'\0', NULL}
 	};
 
 	va_start(aff_list, format);
 
 	while (format && format[i])
 	{
+		j = 0;
 		while (ops[j].form)
 		{
 			if (format[i] == ops[j].form)
 			{
 				printf("%s", separator);
+				ops[j].f(aff_list);
 				separator = ", ";
 				break;
 			}
