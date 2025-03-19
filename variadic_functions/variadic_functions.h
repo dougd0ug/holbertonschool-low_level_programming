@@ -1,6 +1,8 @@
 #ifndef VAR
 #define VAR
 
+#include <stdarg.h>
+
 typedef struct op
 {
 	char form;
