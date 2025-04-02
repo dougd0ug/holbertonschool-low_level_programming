@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
-* print_dlistint - that returns the number of elements
+* dlistint_len - that returns the number of elements
 * @h: list
 * Return: length of the list
 */
