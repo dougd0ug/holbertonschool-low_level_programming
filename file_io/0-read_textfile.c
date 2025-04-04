@@ -18,35 +18,40 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *buffer;
 	ssize_t bytes_read;
 	ssize_t bytes_written;
-	ssize_t total_written;
+	ssize_t total_written = 0;
 
 	if (filename == NULL)
 	{
 		return (0);
 	}
-
 	open_file = open(filename, O_RDONLY);
-
 	if (open_file == -1)
 	{
 		return (0);
 	}
 
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
+	{
+		close(open_file);
+		return (0);
+	}
 	bytes_read = read(open_file, buffer, letters);
-
 	if (bytes_read == -1)
 	{
+		free(buffer);
+		close(open_file);
 		return (0);
 	}
-
 	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
-
 	if (bytes_written == -1)
 	{
+		free(buffer);
+		close(open_file);
 		return (0);
 	}
-
 	total_written += bytes_written;
+	free(buffer);
 	close(open_file);
 	return (total_written);
 }
