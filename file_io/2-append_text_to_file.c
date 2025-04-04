@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 /**
  *append_text_to_file - create a file in read and write and fullfill a text
