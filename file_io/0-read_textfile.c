@@ -1,8 +1,8 @@
-#include "main.h"
+#include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
  * read_textfile - that reads a text file and prints
@@ -19,7 +19,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t bytes_read;
 	ssize_t bytes_written;
 	ssize_t total_written;
-
 
 	if (filename == NULL)
 	{
